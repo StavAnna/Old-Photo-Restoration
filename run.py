@@ -60,7 +60,7 @@ if __name__ == "__main__":
     stage_1_input_dir = opts.input_folder
     imagelist = os.listdir(stage_1_input_dir)
     if any(not is_image_file(file_name) for file_name in imagelist):
-        print('there are some non-image files')
+        print('The file format is not supported. The file must be replaced!')
         raise Exception('Non-Image Files')
 
     ## Phase 1: Global And Local Features
